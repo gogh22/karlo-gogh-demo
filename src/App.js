@@ -29,7 +29,7 @@ function App() {
 
   async function fetchData() {
     try {
-      const response = await fetch(`${REST_API_URL}v1/inference/karlo/t2i`, {
+      const response = await fetch(`/api/v1/inference/karlo/t2i`, {
         method: 'POST',
         headers: {
           'Authorization': `KakaoAK ${REST_API_KEY}`,
