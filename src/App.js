@@ -56,7 +56,7 @@ function App() {
       <header>
         <div className='bg-img'></div>
         <h1 className='repre-text'>
-          <a href="https://kakaobrain.com/techplayground/karlo/demo" target = "_blank"className='karlo'>Karlo</a>
+          <a href="https://kakaobrain.com/techplayground/karlo/demo" target="_blank" rel="noreferrer" className='karlo'>Karlo</a>
           <span className='collabo'>X</span>
           <span className='vincent'>Vincent</span>
         </h1>
