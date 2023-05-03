@@ -16,7 +16,7 @@ function App() {
 
   const text = `A picture of ${userInput} in style of Vincent Van Gogh`;
   const batch_size = 1;
-  const REST_API_KEY = 'Your kakao developers REST API code here';
+  const REST_API_KEY = process.env.REACT_APP_API_KEY;
 
   function chkCharCode(e) {
     const regExp = /[^0-9a-zA-Z || ' ']/g;
