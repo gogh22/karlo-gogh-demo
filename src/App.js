@@ -15,6 +15,7 @@ function App() {
   const text = `A picture of ${userInput} in style of Vincent Van Gogh`;
   const batch_size = 1;
   const REST_API_KEY = process.env.REACT_APP_API_KEY;
+  const REST_API_URL = process.env.REACT_APP_API_BASE_URL;
 
   function chkCharCode(e) {
     const regExp = /[^0-9a-zA-Z || ' ']/g;
@@ -28,7 +29,7 @@ function App() {
 
   async function fetchData() {
     try {
-      const response = await fetch('v1/inference/karlo/t2i', {
+      const response = await fetch(`${REST_API_URL}v1/inference/karlo/t2i`, {
         method: 'POST',
         headers: {
           'Authorization': `KakaoAK ${REST_API_KEY}`,
