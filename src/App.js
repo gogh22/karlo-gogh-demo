@@ -28,7 +28,7 @@ function App() {
 
   async function fetchData() {
     try {
-      const response = await fetch('v1/inference/karlo/t2i', {
+      const response = await fetch('https://api.kakaobrain.com/v1/inference/karlo/t2i', {
         method: 'POST',
         headers: {
           'Authorization': `KakaoAK ${REST_API_KEY}`,
