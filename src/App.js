@@ -86,7 +86,7 @@ function App() {
 
       <footer>
           <p>produced with Kakao developer REST API and React</p>
-          <a href="">Hae Yeon's github</a>
+          <a href="https://github.com/gogh22/karlo-gogh-demo">Hae Yeon's github</a>
       </footer>
 
     </div>
